@@ -8,6 +8,10 @@
       print: './src/print.js'
     },
     devtool: 'inline-source-map', //出错精确显示文件名
+    devServer: {
+      contentBase: './dist',
+      port: 8000,
+    },
     plugins: [
       // new CleanWebpackPlugin(['dist']),
       new HtmlWebpackPlugin({ // 自动生成html
