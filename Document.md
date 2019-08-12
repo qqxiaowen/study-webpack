@@ -3,6 +3,7 @@
 * entty 为文件的入口文件
 * devtool: 'inline-source-map': 打包后出错的文件也能精确定位到是打包之前的哪个文件出的错。
 * 在 devServer 对象下，可以设置 contentBase 和 port 等属性，分别为webpack开发服务器的文件路径 和 端口号。 下载 webpack-dev-server 包，并在 package.json 中设置 start: 'webpack-dev-server --open'，即可通过 npm start 自动启动server服务并且自动更新。
+* mode 为 webpack 的模式，若是production时，package.json中设置 sideEffects: false，可以实现压缩删除未被import的export的代码块。
 
 > 在 output 对象下：
 * filename 为输出文件名
