@@ -1,6 +1,6 @@
   const path = require('path');
   const HtmlWebpackPlugin = require('html-webpack-plugin');
-  // const CleanWebpackPlugin = require('clean-webpack-plugin');
+  const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
   module.exports = {
     entry: {
@@ -13,7 +13,7 @@
       port: 8000,
     },
     plugins: [
-      // new CleanWebpackPlugin(['dist']),
+      new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({ // 自动生成html
         title: 'Development'
       })
